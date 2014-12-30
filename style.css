@@ -20,3 +20,17 @@ h2{
       width:800px;
       height:350px;
 }
+
+html,
+body {
+  height: 100%;
+}
+
+.outer {
+ text-align:center
+}
+
+.inner {
+  display:inline-block;
+  text-align:normal
+}
