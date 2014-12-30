@@ -6354,4 +6354,18 @@ h2{
       height:350px;
 }
 
+html,
+body {
+  height: 100%;
+}
+
+.outer {
+ text-align:center
+}
+
+.inner {
+  display:inline-block;
+  text-align:normal
+}
+
 /*# sourceMappingURL=bootstrap.css.map */
