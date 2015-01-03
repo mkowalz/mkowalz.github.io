@@ -34,3 +34,37 @@ body {
   display:inline-block;
   text-align:normal
 }
+
+.thumbnail.right-caption > img {
+    float: left;
+    margin-right: 9px;
+}
+
+.thumbnail.right-caption {
+    float: left;
+}
+
+.thumbnail.right-caption > .caption {
+    padding: 4px;
+}
+
+.thumbnail.left-caption > img {
+    float: right;
+    margin-left: 9px;
+}
+
+.thumbnail.left-caption {
+    float: right;
+}
+
+.thumbnail.left-caption > .caption {
+    padding: 4px;
+}
+
+.rightside{
+    float:right;
+ }
+
+.leftside{
+    float:left;
+ }
