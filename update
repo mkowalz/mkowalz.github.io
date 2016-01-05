@@ -1,0 +1,10 @@
+#!/bin/bash
+v=$(cat version)
+echo "Updating from Version $v"
+git add --all
+git commit -m "Version $v"
+git push -u origin master
+rm version
+v=$(echo "$v + 0.01" | bc)
+echo $v > version
+echo "Now at Version $v"
