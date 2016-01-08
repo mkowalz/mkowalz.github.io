@@ -21,6 +21,11 @@ h2{
       height:350px;
 }
 
+.projectbox{
+  margin-top:10px;
+  border: #cdcdcd medium solid;
+}
+
 html,
 body {
   height: 100%;
