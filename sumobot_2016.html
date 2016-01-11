@@ -1,0 +1,105 @@
+<html>
+	<head>
+
+		<link rel="stylesheet" href="dist/css/bootstrap.css">
+		<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-58434636-1', 'auto');
+            ga('send', 'pageview');
+            ga(‘set’, ‘&uid’, {{USER_ID}}); // Set the user ID using signed-in user_id.
+
+    </script>
+
+	<body>
+
+		<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+
+		<div class="nav">
+	      <p><br></p>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<ul class="nav nav-pills nav-justified">
+							<li role="presentation"><a href="index.html">Home</a></li>
+							<li role="presentation"><a href="aboutMe.html">About Me</a></li>
+							<li role="presentation" class="active"><a href="projects.html">Projects</a></li>
+							<li role="presentation"><a href="contactMe.html">Contact Me</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="potrait">
+	      	<p><br></p>
+			<img src = "pictures/matt-square.jpg" class="center-block img-circle" height="200" width="200">
+			<p><br><br></p>
+		</div>
+
+				<div class="container">
+          <p><br></p>
+          <div class="media rightside">
+            <div class="media-body">
+              <h3 class="media-heading">Background</h3>
+              <p><br></p>
+              <p>Last year I entered the McMaster Sumobot competition on a team with Brett Nickle and Ali Dincor for the Junior Division of the 
+              McMaster Sumobot Competition. I learned a lot about making an actual working robot, but I knew for the Senior Competition we would need to step it up.
+              I wanted to apply the knowledge I gained during my co-op to making a much more serious machine.</p>
+            </div>
+            <a class="media-right media-middle" href="#">
+              <img src="pictures/sumobot_2016/2016_4.jpg" height="200" width="200">
+            </a>
+          </div>
+		</div>
+
+		<div class="container">
+          <p><br></p>
+          <div class="media leftside">
+            <div class="media-body">
+              <h3 class="media-heading">Electrical</h3>
+              <p><br></p>
+              <p>The first sumobot's electrical system was unreliable to put it lightly. It consisted of an Ardunio Uno interfaced to a breadboard. It was messy, unstable and very difficult to debug. A lot of my co-op at Enermotion was spent debugging and working with PCB's, so I decided it was time to design my own. I used the ATMEGA328 since it is available in a DIP package, and there is alot of documentation for the components needed to make it programmable directly on the board. This system also interfaced with an ultrasonic sensor, and the QRD light sensors were much more stable being soldered to the board.</p>
+            </div>
+            <a class="media-right media-middle" href="#">
+              <img src="pictures/sumobot_2016/sumobot_board.jpg" height="200"width="200">
+            </a>
+          </div>
+		</div>
+
+		<div class="container">
+          <p><br></p>
+          <div class="media rightside">
+            <div class="media-body">
+              <h3 class="media-heading">Mechanical</h3>
+              <p><br></p>
+              <p>In order to make a more rugged design, I wanted to build the chassis made of aluminum. Since there was a weight limit of 3kg, I wanted the freedom to distribute weight strategically after the necessary chassis was done. This design worked much better than the previous plastic sumobot, but it became apparent after the competition that the next revision would have to have better interfacing between the tires and motors. Some slight issues in balance lead to the robot skidding and not delivering maximum pushing torque.</p>
+            </div>
+            <a class="media-right media-middle" href="#">
+              <img src="pictures/sumobot_2016/2016_2.jpg" height="200" width="200">
+            </a>
+          </div>
+		</div>
+
+		<div class="container">
+          <p><br></p>
+          <div class="media rightside">
+            <div class="media-body">
+              <h3 class="media-heading">Software</h3>
+              <p><br></p>
+              <p>The software algorithms for detecting the distance of the opposing robot and acting accordingly was very simple. It was decided to opt for a very simple control strategy (turn around in the ring until the sensor lined up with the opponent, and then charge forward). There were also higher priority checks for the QRD light sensors to ensure the robot stayed in the ring. The ATMEGA328 is a relatively slow chip so the code needed to be lean and minimal to ensure a decent response time. The code can be viewed here.</p>
+            </div>
+            <a class="media-right media-middle" href="#">
+              <img src="pictures/ardunio.jpg" height="200" width="200">
+            </a>
+          </div>
+		</div>
+
+
+	</body>
