@@ -33,6 +33,11 @@ body {
   height: 100%;
 }
 
+.thumbnail {
+  width:400px;
+  height:300px;
+}
+
 .outer {
  text-align:center
 }
