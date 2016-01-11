@@ -33,7 +33,7 @@ body {
   height: 100%;
 }
 
-.thumbnail {
+.thumbnail > img {
   width:400px;
   height:300px;
 }
