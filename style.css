@@ -21,7 +21,7 @@ h2{
       height:350px;
 }
 
-.projectbox{
+.projectbox > div {
   border-style: solid;
   border-width: 1px;
 }
