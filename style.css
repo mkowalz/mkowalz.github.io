@@ -22,7 +22,7 @@ h2{
 }
 
 .projectbox{
-  border: 1px solid gray;
+  border: 1px solid rgb(65,139,202);
 }
 
 html,
@@ -30,10 +30,6 @@ body {
   height: 100%;
 }
 
-.thumbnail > img {
-  width:400px;
-  height:300px;
-}
 
 .outer {
  text-align:center
