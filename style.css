@@ -25,6 +25,10 @@ h2{
   outline: 1px solid black;
 }
 
+#wrapper {
+  border: 1px #e4e4e4 solid;
+}
+
 html,
 body {
   height: 100%;
